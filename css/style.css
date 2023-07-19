@@ -1,5 +1,68 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*nav*/
+nav {
+    width: 230px;
+    height: calc(100vh - 90px);
+    position: fixed;
+    left: 0;
+}
+
+/*nav*/
+
+/*main*/
+main {}
+
+/*main*/
+main {
+    height: calc(100vh - 90px);
+    width: calc(100vw - 230px);
+    position: fixed;
+    left: 230px;
+}
+
+/*debug*/
+.debug main {
+    background-color: lightgreen;
+
+}
+
+.debug nav {
+
+    background-color: black;
+
+}
+
+.debug footer {
+    height: 90px;
+    background-color: lightslategray;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/*small*/
+@media screen and (max-width:552px) {
+
+    /*nav*/
+    nav {
+        width: 50px;
+    }
+
+    /*nav*/
+    /*main*/
+    main {
+        width: calc(100vw - 50px);
+
+        left: 50px;
+    }
+
+    /*main*/
+
+}
+
+/*small*/

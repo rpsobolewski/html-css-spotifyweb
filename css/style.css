@@ -4,36 +4,38 @@
     box-sizing: border-box;
 
 }
-body{
+
+body {
     font-family: 'DM Sans', sans-serif;
 }
+
 /*uti*/
-.col-2{
+.col-2 {
     width: calc(100% / 12 * 2);
 }
-.col-6{
+
+.col-6 {
     width: calc(100% / 12 * 6);
 }
-.ta-center{
+
+.ta-center {
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
+.flex{
+    display: flex;
+}
+
 /*uti*/
 
-.upgrade a{
-    color: white;
-    padding: 8px 25px;
-    border: 2px solid white;
-    border-radius: 25px ;
-    
 
-}
 
 /*nav*/
 nav {
-    height:calc(100vh - 90px) ;
+    height: calc(100vh - 90px);
     width: 230px;
     position: fixed;
     left: 0;
@@ -41,10 +43,12 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    background-color: black;
+
 }
 
-.logo, .cell{
+.logo,
+.cell {
     width: 100%;
 }
 
@@ -63,13 +67,16 @@ main {
     position: fixed;
     left: 230px;
     overflow: scroll;
+    background-color: #141922;
 }
 
-.filter{
+.filter {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.upgrade_flex{
+
+.upgrade_flex {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -80,31 +87,85 @@ main {
     width: calc(100% - 248px);
     top: 0;
 }
-.recently_played{
-    display: flex;
-    
-    
+
+.recently_played>h2{
+   margin-top: 30px;
+   margin-left: 30px;
+   margin-bottom: 25px;
+   color: white;
+
+
 }
 
-.creato_per{
+.recently_played>.flex{
+    flex-wrap: wrap;
+}
+.creato_per {
     display: flex;
-    
+
 }
 
-.artisti{
+.artisti {
     display: flex;
 }
-.card, .card_circle{
-    margin-left: 30px;
+
+.card,
+.card_circle {
+    margin-left: 20px;
+    width: 177px;
 }
+
+.upgrade a {
+    color: white;
+    padding: 8px 25px;
+    border: 1px solid white;
+    border-radius: 25px;
+
+
+}
+
+.filter .type {
+    padding: 0 5px;
+    margin-top: 22px;
+}
+
+.type a {
+    color: #76787D;
+    font-size: 15px;
+}
+.card_img img{
+    width: 177px;
+    aspect-ratio: 1;
+}
+
+.card_text h2{
+    color: white;
+    font-size: 17px;
+}
+.card_text span{
+    color:  #76787D;
+    font-size: 15px;
+}
+
 /*main*/
 /*footer*/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
+    background-color: #282828;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
+
 /*footer*/
+/*hover*/
+.filter a:hover{
+    border-bottom: 1px solid #ADFF2F;
+}
+/*hover*/
 
 
 
@@ -115,7 +176,8 @@ footer{
     nav {
         width: 50px;
     }
-    .semipermanent{
+
+    .semipermanent {
         display: none;
     }
 
@@ -125,6 +187,13 @@ footer{
         width: calc(100vw - 50px);
 
         left: 50px;
+    }
+
+    .upgrade_flex {
+        width: calc(100% - 68px);
+    }
+    .type a{
+        font-size: 13px;
     }
 
     /*main*/
@@ -139,7 +208,7 @@ footer{
 }
 
 .debug nav {
-    
+
     background-color: black;
 
 }
@@ -151,28 +220,34 @@ footer{
     width: 100%;
     bottom: 0;
 }
-.debug .col-2, .col-6 {
-    height: 90%;
-    background-color: plum;
+
+.debug .col-2{
+height: 90%;
+background-color: plum;
 }
-.debug .logo{
+
+.debug .logo {
     background-color: blanchedalmond;
     height: 85px;
 }
-.debug .cell{
+
+.debug .cell {
     background-color: azure;
     height: 35px;
     border: 1px dashed;
 }
-.debug .new_playlist{
+
+.debug .new_playlist {
     background-color: aquamarine;
     height: 45px;
 }
-.debug .profile{
+
+.debug .profile {
     height: 75px;
     background-color: aqua;
 }
-.debug .type{
+
+.debug .type {
     width: 100px;
     height: 30px;
     background-color: cadetblue;
@@ -180,28 +255,33 @@ footer{
 }
 
 
-.debug .card_img{
+.debug .card_img {
     height: 170px;
     aspect-ratio: 1;
     background-color: blueviolet;
 }
-.debug .card_img_circle{
+
+.debug .card_img_circle {
     height: 170px;
     aspect-ratio: 1;
     border-radius: 50%;
     background-color: blueviolet;
 }
-.debug .card_text{
+
+.debug .card_text {
     width: 100%;
     height: 30px;
     background-color: cadetblue;
 }
-.debug .card_text_circle{
+
+.debug .card_text_circle {
     width: 100%;
     height: 30px;
     background-color: cadetblue;
 }
-.debug .card, .card_circle{
+
+.debug .card,
+.card_circle {
     width: fit-content;
     margin-top: 30px;
 }

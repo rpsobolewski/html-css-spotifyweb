@@ -25,7 +25,8 @@ body {
 a {
     text-decoration: none;
 }
-.flex{
+
+.flex {
     display: flex;
 }
 
@@ -88,26 +89,30 @@ main {
     top: 0;
 }
 
-.recently_played>h2{
-   margin-top: 30px;
-   margin-left: 30px;
-   margin-bottom: 25px;
-   color: white;
+.recently_played>h2,.creato_per>h2, .artisti>h2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+    color: white;
 
 
 }
+.creato_per>span,.artisti>span{
+    margin-left: 25px;
+    
+    color: #76787D;
+}
 
-.recently_played>.flex{
+.recently_played>.flex {
     flex-wrap: wrap;
 }
-.creato_per {
-    display: flex;
-
+.creato_per>.flex {
+    flex-wrap: wrap;
 }
 
-.artisti {
-    display: flex;
-}
+
+
+
 
 .card,
 .card_circle {
@@ -133,19 +138,48 @@ main {
     color: #76787D;
     font-size: 15px;
 }
-.card_img img{
+
+.card_img img, .card_img_circle img {
     width: 177px;
     aspect-ratio: 1;
+
+}
+.card_img_circle img{
+    border-radius: 50%;
+}
+.card{
+    position: relative;
+    padding-top: 10px;
 }
 
-.card_text h2{
+.card_text h2 {
     color: white;
     font-size: 17px;
 }
-.card_text span{
-    color:  #76787D;
+
+.card_text span {
+    color: #76787D;
     font-size: 15px;
 }
+
+.overlay{
+    width: 177px;
+    aspect-ratio: 1;
+    position: absolute;z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+}
+.overlay span{
+    color: white;
+    font-size: 20px;
+}
+
+.artisti, .creato_per, .recently_played{
+    padding-top: 20px;
+}
+
 
 /*main*/
 /*footer*/
@@ -162,9 +196,13 @@ footer {
 
 /*footer*/
 /*hover*/
-.filter a:hover{
+.filter a:hover {
     border-bottom: 1px solid #ADFF2F;
 }
+.card:hover .overlay{
+    display: block;
+}
+
 /*hover*/
 
 
@@ -192,7 +230,8 @@ footer {
     .upgrade_flex {
         width: calc(100% - 68px);
     }
-    .type a{
+
+    .type a {
         font-size: 13px;
     }
 
@@ -221,9 +260,9 @@ footer {
     bottom: 0;
 }
 
-.debug .col-2{
-height: 90%;
-background-color: plum;
+.debug .col-2 {
+    height: 90%;
+    background-color: plum;
 }
 
 .debug .logo {

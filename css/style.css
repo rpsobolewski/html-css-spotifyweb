@@ -148,6 +148,7 @@ main {
     position: fixed;
     width: calc(100% - 248px);
     top: 0;
+    z-index: 1;
 }
 
 .recently_played>h2,.creato_per>h2, .artisti>h2 {
@@ -264,6 +265,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     color: #76787D;
+    
 }
 .footer_left_text>div{
     color: white;
@@ -277,6 +279,70 @@ footer {
 }
 .footer_left_icons .fa-folder{
     padding-left:  15px;
+}
+.footer_center{
+    
+    flex-direction: column;
+    align-items: center;
+}
+.footer_center_icons{
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    
+    
+}
+.footer_center_icons .fa-circle-play{
+    font-size: 28px;
+}
+.footer_center_bar{
+    align-items: center;
+    color: white;
+     position: relative;
+}
+.footer_center_bar .bar1{
+    background-color: #76787D;
+    width: 227px;
+    height: 3px;
+    margin-right: 5px;
+   
+}
+
+.footer_center_bar .bar1_thick{
+    background-color: white;
+    height: 5px;
+    width: 23px;
+    margin-left: 5px;
+    border-radius: 2px;
+    
+}
+.footer_center_bar .time{
+    font-size: 11px;
+}
+.footer_right{
+    align-items: center;
+}
+.footer_right .bar2{
+    background-color: #76787D;
+    width: 50px;
+    height: 3px;
+    margin-right: 5px;
+}
+.footer_right .bar2_thick{
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    margin-left: 5px;
+    border-radius: 2px;
+    
+}
+.footer_right .fa-solid{
+    color: white;
+    margin-left: 10px;
+    font-size: 13px;
+
 }
 
 
@@ -293,6 +359,31 @@ footer {
 /*hover*/
 
 
+/*large*/
+@media screen and (max-width:1095px){
+    /*footer*/
+    
+    /*footer*/
+
+}
+/*large*/
+
+/*medium*/
+@media screen and (max-width:878px){
+    .footer_right .bar2{
+        width: 30px;
+    }
+    .footer_center_bar .bar1{
+        width: 104px;
+    }
+    .footer_right .bar2_thick{
+        width: 17px;
+    }
+    .footer_center_bar .bar1_thick{
+        width: 25px;
+    }
+}
+/*medium*/
 
 /*small*/
 @media screen and (max-width:552px) {
@@ -336,6 +427,14 @@ footer {
     }
 
     /*main*/
+    /*footer*/
+    .footer_center_icons{
+        width: 150px;
+    }
+    .footer_right .bar2{
+        width: 80px;
+    }
+    /*footer*/
 
 }
 

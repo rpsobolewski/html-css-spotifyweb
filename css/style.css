@@ -21,7 +21,8 @@ body {
 .ta-center {
     text-align: center;
 }
-.ta-left{
+
+.ta-left {
     text-align: left;
 }
 
@@ -51,68 +52,83 @@ nav {
 
 }
 
-.logo{
+.logo {
     padding-left: 20px;
     padding-top: 20px;
 }
-.logo_small{
+
+.logo_small {
     padding-top: 10px;
     display: none;
 }
-.cell{
+
+.cell {
     padding-left: 10px;
     padding-bottom: 5px;
-    color:#76787D;
+    color: #76787D;
     display: flex;
     align-items: center;
     padding-top: 5px;
 }
-.cell span{
+
+.cell span {
     padding-left: 5px;
-    
+
 }
-.plus{
+
+.plus {
     color: black;
     background-color: #141922;
     padding: 10px;
     width: 40px;
 }
-.fa-plus{
+
+.fa-plus {
     font-size: 20px;
-    
+
 }
-.new_playlist{
+
+.new_playlist {
     margin-left: 10px;
 }
-.new_playlist span{
+
+.new_playlist span {
     color: #76787D;
     font-weight: 700;
     align-self: center;
     padding-left: 5px;
-    
+
 }
-.overflow{
+
+.overflow {
     overflow-y: scroll;
     height: 300px;
+    
 }
-.profile{
+
+.profile {
     flex-direction: column;
     width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
     color: #76787D;
     padding-bottom: 5px;
 }
-.profile_img{
+
+.profile_img {
     background-color: #76787D;
     border-radius: 50%;
     margin-top: 5px;
     padding: 0 2px;
 }
-.profile .flex .john{
+
+.profile .flex .john {
     color: white;
     align-self: center;
     padding-left: 5px;
 
+}
+.cell img{
+    filter: grayscale();
 }
 
 
@@ -151,7 +167,9 @@ main {
     z-index: 1;
 }
 
-.recently_played>h2,.creato_per>h2, .artisti>h2 {
+.recently_played>h2,
+.creato_per>h2,
+.artisti>h2 {
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 25px;
@@ -159,15 +177,18 @@ main {
 
 
 }
-.creato_per>span,.artisti>span{
+
+.creato_per>span,
+.artisti>span {
     margin-left: 25px;
-    
+
     color: #76787D;
 }
 
 .recently_played>.flex {
     flex-wrap: wrap;
 }
+
 .creato_per>.flex {
     flex-wrap: wrap;
 }
@@ -201,16 +222,19 @@ main {
     font-size: 15px;
 }
 
-.card_img img, .card_img_circle img {
+.card_img img,
+.card_img_circle img {
     width: 177px;
     aspect-ratio: 1;
-    
+
 
 }
-.card_img_circle img{
+
+.card_img_circle img {
     border-radius: 50%;
 }
-.card{
+
+.card {
     position: relative;
     padding-top: 10px;
 }
@@ -224,11 +248,13 @@ main {
     color: #76787D;
     font-size: 15px;
 }
-.overlay .fa-circle-play{
+
+.overlay .fa-circle-play {
     font-size: 65px;
     margin-top: 55px;
 }
-.overlay{
+
+.overlay {
     width: 177px;
     aspect-ratio: 1;
     position: absolute;
@@ -236,14 +262,17 @@ main {
     left: 0;
     background-color: rgba(0, 0, 0, 0.555);
     display: none;
-    
+
 }
-.overlay span{
+
+.overlay span {
     color: white;
     font-size: 20px;
 }
 
-.artisti, .creato_per, .recently_played{
+.artisti,
+.creato_per,
+.recently_played {
     padding-top: 20px;
 }
 
@@ -260,85 +289,100 @@ footer {
     width: 100%;
     bottom: 0;
 }
-.footer_left{
+
+.footer_left {
     margin-left: 10px;
     align-items: center;
     justify-content: space-between;
     color: #76787D;
-    
+
 }
-.footer_left_text>div{
+
+.footer_left_text>div {
     color: white;
-    
+
 }
-.footer_left_text{
+
+.footer_left_text {
     margin: 0 10px;
 }
-.footer_left_icons .fa-heart{
-    padding-left:  15px;
+
+.footer_left_icons .fa-heart {
+    padding-left: 15px;
 }
-.footer_left_icons .fa-folder{
-    padding-left:  15px;
+
+.footer_left_icons .fa-folder {
+    padding-left: 15px;
 }
-.footer_center{
-    
+
+.footer_center {
+
     flex-direction: column;
     align-items: center;
 }
-.footer_center_icons{
+
+.footer_center_icons {
     color: white;
     font-size: 20px;
     align-items: center;
     justify-content: space-around;
     width: 200px;
-    
-    
+
+
 }
-.footer_center_icons .fa-circle-play{
+
+.footer_center_icons .fa-circle-play {
     font-size: 28px;
 }
-.footer_center_bar{
+
+.footer_center_bar {
     align-items: center;
     color: white;
-     position: relative;
+    position: relative;
 }
-.footer_center_bar .bar1{
+
+.footer_center_bar .bar1 {
     background-color: #76787D;
     width: 227px;
     height: 3px;
     margin-right: 5px;
-   
+
 }
 
-.footer_center_bar .bar1_thick{
+.footer_center_bar .bar1_thick {
     background-color: white;
     height: 5px;
     width: 23px;
     margin-left: 5px;
     border-radius: 2px;
-    
+
 }
-.footer_center_bar .time{
+
+.footer_center_bar .time {
     font-size: 11px;
 }
-.footer_right{
+
+.footer_right {
     align-items: center;
 }
-.footer_right .bar2{
+
+.footer_right .bar2 {
     background-color: #76787D;
     width: 50px;
     height: 3px;
     margin-right: 5px;
 }
-.footer_right .bar2_thick{
+
+.footer_right .bar2_thick {
     background-color: white;
     height: 5px;
     width: 30px;
     margin-left: 5px;
     border-radius: 2px;
-    
+
 }
-.footer_right .fa-solid{
+
+.footer_right .fa-solid {
     color: white;
     margin-left: 10px;
     font-size: 13px;
@@ -352,37 +396,64 @@ footer {
     border-bottom: 1px solid #ADFF2F;
     color: white;
 }
-.card:hover .overlay{
+
+.card:hover .overlay {
     display: block;
 }
 
+nav .cell:hover{
+    color: white;
+}
+
+
+.bar1_thick:hover, .bar2_thick:hover{
+    background-color: #ADFF2F;
+}
+
+.upgrade a:hover{
+    padding: 10px 30px;
+}
+.new_playlist:hover .plus{
+    background-color: white;
+    
+}
+.new_playlist:hover span{
+    color: white;
+    
+}
 /*hover*/
 
 
+
 /*large*/
-@media screen and (max-width:1095px){
+@media screen and (max-width:1095px) {
     /*footer*/
-    
+
     /*footer*/
 
 }
+
 /*large*/
 
 /*medium*/
-@media screen and (max-width:878px){
-    .footer_right .bar2{
+@media screen and (max-width:878px) {
+    .footer_right .bar2 {
         width: 30px;
     }
-    .footer_center_bar .bar1{
+
+    .footer_center_bar .bar1 {
         width: 104px;
     }
-    .footer_right .bar2_thick{
+
+    .footer_right .bar2_thick {
         width: 17px;
     }
-    .footer_center_bar .bar1_thick{
+
+    .footer_center_bar .bar1_thick {
         width: 25px;
     }
 }
+
 /*medium*/
 
 /*small*/
@@ -396,17 +467,20 @@ footer {
     .semipermanent {
         display: none;
     }
-    .logo{
+
+    .logo {
         display: none;
     }
-    .logo_small{
+
+    .logo_small {
         display: block;
     }
-    
-    .profile_img{
-        margin-left:7px ;
+
+    .profile_img {
+        margin-left: 7px;
     }
-    .fa-circle-down{
+
+    .fa-circle-down {
         margin-left: 12px;
     }
 
@@ -426,19 +500,31 @@ footer {
         font-size: 13px;
     }
 
+    .card,
+    .card_circle {
+        margin-left: 30px;
+        width: 177px;
+    }
+
     /*main*/
     /*footer*/
-    .footer_center_icons{
+    .footer_center_icons {
         width: 150px;
     }
-    .footer_right .bar2{
+
+    .footer_right .bar2 {
         width: 80px;
     }
+
     /*footer*/
 
 }
 
 /*small*/
+
+
+
+
 /*debug*/
 .debug main {
     background-color: lightgreen;

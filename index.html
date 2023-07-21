@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +19,54 @@
     <body class>
 
         <nav>
-            <div class="logo"></div>
-            <div class="semipermanent">
-                <div class="home">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
+            <div class="central_nav">
+                <div class="logo">
+                    <img width="160px" src="./img/logo.svg" alt="spotify">
                 </div>
-                <div class="playlist">
-                    <div class="new_playlist"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
+                <div class="logo_small ta-center">
+                    <img width="35px" src="./img/logo-small.svg" alt>
+                </div>
+                <div class="home">
+                    <div class="cell  ta-left"><img height="30px"
+                            src="./img/home.svg" alt><span class="semipermanent">Home</span></div>
+                    <div class="cell ta-left"><img height="30px"
+                            src="./img/search.svg" alt><span
+                            class="semipermanent">Cerca</span></div>
+                    <div class="cell ta-left"><img height="30px"
+                            src="./img/libreria.svg" alt><span
+                            class="semipermanent">La tua libreria</span></div>
+                </div>
+                <div class="semipermanent">
+
+                    <div class="playlist">
+                        <div class="new_playlist flex">
+                            <div class="plus ta-center"><i
+                                    class="fa-solid fa-plus"></i></div>
+                            <span>Crea Playlist</span>
+                        </div>
+                        <div class="overflow">
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                            <div class="cell">Nome Playlist</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="profile"></div>
+            <div class="profile flex">
+                <span><i class="fa-regular fa-circle-down"></i><span class="semipermanent"> Installa app</span> </span>
+                <hr class="semipermanent">
+                <div class="flex"><img class="profile_img" height="30px" src="./img/profile.svg" alt=""> <div class="john semipermanent">John Doe</div></div>
+            </div>
         </nav>
         <main>
             <div class="upgrade_flex">
@@ -59,7 +93,7 @@
                                 alt="metal">
                         </div>
                         <div class="overlay">
-                            <span>a</span>
+                            <span><i class="fa-regular fa-circle-play"></i></span>
                         </div>
                         <div class="card_text ">
                             <h2>Heavy Metal</h2>
@@ -69,6 +103,9 @@
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/stranger.jpeg"
                                 alt="stranger things"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
                         <div class="card_text ">
                             <h2>Stranger Things, Vol. 1 (a Netflix Original
                                 Series Soundtrack)</h2>
@@ -78,6 +115,9 @@
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/aquietplace.jpeg"
                                 alt="a quiet place"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
                         <div class="card_text ">
                             <h2>A quiet place</h2>
                             <span>Subtitle</span>
@@ -86,6 +126,9 @@
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/split.jpeg"
                                 alt="split"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
                         <div class="card_text ">
                             <h2>Split</h2>
                             <span>Subtitle</span>
@@ -94,6 +137,10 @@
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/cure.jpeg"
                                 alt="cure"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
+                                
                         <div class="card_text ">
                             <h2>A cure for wellness</h2>
                             <span>Subtitle</span>
@@ -102,6 +149,9 @@
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/sinister.jpeg"
                                 alt="sinister"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
                         <div class="card_text ">
                             <h2>Sinister</h2>
                             <span>Subtitle</span>
@@ -121,19 +171,22 @@
                                 alt="radar">
                         </div>
                         <div class="overlay">
-                            <span>a</span>
+                            <span><i class="fa-regular fa-circle-play"></i></span>
                         </div>
                         <div class="card_text ">
                             <h2>Release Radar</h2>
-                            
+
                         </div>
                     </div>
                     <div class="card ta-center"><!--card-->
                         <div class="card_img"><img src="./img/mixdaily.jpeg"
                                 alt="mixdaily"></div>
+                                <div class="overlay">
+                                    <span><i class="fa-regular fa-circle-play"></i></span>
+                                </div>
                         <div class="card_text ">
                             <h2>Daily Mix 1</h2>
-                            
+
                         </div>
                     </div>
 
@@ -149,20 +202,19 @@
                                 src="./img/youg.jpeg"
                                 alt="youg">
                         </div>
-                        <div class="overlay">
-                            <span>a</span>
-                        </div>
+                        
                         <div class="card_text ">
                             <h2>Lana Del Rey</h2>
-                            
+
                         </div>
                     </div>
                     <div class="card_circle ta-center"><!--card-->
-                        <div class="card_img_circle"><img src="./img/einaudi.jpeg"
+                        <div class="card_img_circle"><img
+                                src="./img/einaudi.jpeg"
                                 alt="einaudi"></div>
                         <div class="card_text ">
                             <h2>Ludovico Einaudi</h2>
-                            
+
                         </div>
                     </div>
 
@@ -171,9 +223,20 @@
 
         </main>
         <footer>
-            <div class="col-2"></div>
-            <div class="col-6"></div>
-            <div class="col-2"></div>
+            <div class=" footer_left flex">
+                <img height="40px" src="./img/sinister.jpeg" alt="sinister">
+                <div class="footer_left_text">
+                    <div>Sinister</div>
+                    <span>Brano Nome</span>
+                </div>
+                <div class="footer_left_icons">
+                    <div><i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i></div>
+                </div>
+
+            </div>
+            <div class="footer_centre"></div>
+            <div class=""></div>
         </footer>
     </body>
 </html>

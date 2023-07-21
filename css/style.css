@@ -21,6 +21,9 @@ body {
 .ta-center {
     text-align: center;
 }
+.ta-left{
+    text-align: left;
+}
 
 a {
     text-decoration: none;
@@ -48,11 +51,69 @@ nav {
 
 }
 
-.logo,
-.cell {
-    width: 100%;
+.logo{
+    padding-left: 20px;
+    padding-top: 20px;
 }
+.logo_small{
+    padding-top: 10px;
+    display: none;
+}
+.cell{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color:#76787D;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+.cell span{
+    padding-left: 5px;
+    
+}
+.plus{
+    color: black;
+    background-color: #141922;
+    padding: 10px;
+    width: 40px;
+}
+.fa-plus{
+    font-size: 20px;
+    
+}
+.new_playlist{
+    margin-left: 10px;
+}
+.new_playlist span{
+    color: #76787D;
+    font-weight: 700;
+    align-self: center;
+    padding-left: 5px;
+    
+}
+.overflow{
+    overflow-y: scroll;
+    height: 300px;
+}
+.profile{
+    flex-direction: column;
+    width: 90%;
+    margin:0 auto;
+    color: #76787D;
+    padding-bottom: 5px;
+}
+.profile_img{
+    background-color: #76787D;
+    border-radius: 50%;
+    margin-top: 5px;
+    padding: 0 2px;
+}
+.profile .flex .john{
+    color: white;
+    align-self: center;
+    padding-left: 5px;
 
+}
 
 
 /*nav*/
@@ -67,7 +128,7 @@ main {
     width: calc(100vw - 230px);
     position: fixed;
     left: 230px;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: #141922;
 }
 
@@ -142,6 +203,7 @@ main {
 .card_img img, .card_img_circle img {
     width: 177px;
     aspect-ratio: 1;
+    
 
 }
 .card_img_circle img{
@@ -161,15 +223,19 @@ main {
     color: #76787D;
     font-size: 15px;
 }
-
+.overlay .fa-circle-play{
+    font-size: 65px;
+    margin-top: 55px;
+}
 .overlay{
     width: 177px;
     aspect-ratio: 1;
-    position: absolute;z-index: 1;
-    top: 0;
+    position: absolute;
+    top: 10px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.555);
     display: none;
+    
 }
 .overlay span{
     color: white;
@@ -193,11 +259,32 @@ footer {
     width: 100%;
     bottom: 0;
 }
+.footer_left{
+    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+    color: #76787D;
+}
+.footer_left_text>div{
+    color: white;
+    
+}
+.footer_left_text{
+    margin: 0 10px;
+}
+.footer_left_icons .fa-heart{
+    padding-left:  15px;
+}
+.footer_left_icons .fa-folder{
+    padding-left:  15px;
+}
+
 
 /*footer*/
 /*hover*/
 .filter a:hover {
     border-bottom: 1px solid #ADFF2F;
+    color: white;
 }
 .card:hover .overlay{
     display: block;
@@ -217,6 +304,19 @@ footer {
 
     .semipermanent {
         display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo_small{
+        display: block;
+    }
+    
+    .profile_img{
+        margin-left:7px ;
+    }
+    .fa-circle-down{
+        margin-left: 12px;
     }
 
     /*nav*/

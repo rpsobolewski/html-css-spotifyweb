@@ -388,6 +388,15 @@ footer {
     font-size: 13px;
 
 }
+.dot{
+    width: 8px;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 -4px;
+    z-index: 1;
+    display: none;
+}
 
 
 /*footer*/
@@ -406,7 +415,17 @@ nav .cell:hover{
 }
 
 
-.bar1_thick:hover, .bar2_thick:hover{
+
+.footer_center_bar:hover .dot{
+    display: block;
+}
+.footer_center_bar:hover .bar1_thick{
+    background-color: #ADFF2F;
+}
+.footer_right:hover .dot{
+    display: block;
+}
+.footer_right:hover .bar2_thick{
     background-color: #ADFF2F;
 }
 
@@ -502,8 +521,11 @@ nav .cell:hover{
 
     .card,
     .card_circle {
-        margin-left: 30px;
+        
         width: 177px;
+    }
+    main .flex{
+        justify-content: space-evenly;
     }
 
     /*main*/
